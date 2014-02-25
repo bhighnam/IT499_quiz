@@ -1,0 +1,18 @@
+Came up with initial idea, proposal, and powerpoint
+Created the Page Flow and App Data diagrams
+Created the work division for each person to be in charge of page flow elements
+Created Test Cases and test case ideas
+Added 3 new pages (contact_us.html, voting.html, and account.html)
+Changed CSS to match the page flow diagram
+Made the navigation section functional
+Moved the about us section to the about_us.html page
+
+JANUARY 18, 2014
+Created a Facebook, Twitter, Gmail, and Paypal account for SentenceZing
+Added Logos and links to these accounts on the Contact Us page
+Created validation for Users for email and password 
+Created validation for Microposts for sentence length
+Rolled back git and helped restore files after the “catastrophe”
+Added template to application.html.erb and and content to about and contactus .html.erb pages 
+
+JANUARY 25, 2014
