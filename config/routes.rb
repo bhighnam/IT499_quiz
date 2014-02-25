@@ -10,9 +10,6 @@ Teamawesome::Application.routes.draw do
   get "static_pages/about"
   get "static_pages/contactus"
   
-  match "/about" => "static_pages/about"
-  match "/contactus" => "static_pages/contactus"
-  
   resources :microposts
 
   resources :users
