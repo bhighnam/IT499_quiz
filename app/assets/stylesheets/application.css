@@ -17,7 +17,6 @@
 	margin: 0 auto; 
 	border-left: 1px solid red;
 	border-right: 1px solid #000;
-	background-color: red;
 	font-size: 100%;
 	}
 
@@ -174,7 +173,7 @@
 body {
 	margin: 0px;
 	padding: 0px;
-	background-color: blue;
+	//background-color: blue;
 	text-align: center;
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 	color: #666;
@@ -187,9 +186,7 @@ body h3{
 		text-align:center;
 		font-size: 20px;
 		margin: 20	px 120px 20px 15px;	
-		color: #395A88;
-		
-			
+		color: #395A88;	
 		}
 
 .center
