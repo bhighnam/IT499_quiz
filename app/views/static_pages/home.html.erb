@@ -4,13 +4,14 @@
         to make them the top story of the week! </p>
         
         
-        <center> <table>
+        <table>
         <tr>
             	<th colspan="2" style="text-align:left" >Existing User Login Area</th>
             	<th style="text-align:left"> New User Login Area</th>
-          	</tr>
-          	<tr>
-          		<td><label>User Name: </label></td>
+        </tr>
+          	
+        <tr>
+          	<td><label>User Name: </label></td>
              	<td>
                   <input name="username" type="text" id="username" size="30" 
              	    data-validation="length alphanumeric" data-validation-length="1-10" 
@@ -18,10 +19,11 @@
             	</td>
              	<!-- New User -->
              	<td> <%= link_to "New User", :action => "new", :id => users %> </td>
-         	</tr>
-        	<tr>
+        </tr>
+        
+        <tr>
             	<td><label>Password: </label></td>
                 
-             	<td</td>
+             	<td><input type="text"/></td>
            </tr>
-		</table> </center>
+		</table> 
