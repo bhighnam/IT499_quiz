@@ -5,11 +5,8 @@ Teamawesome::Application.routes.draw do
 
   resources :stories
                                   
-  get "static_pages/new_user"
-  get "static_pages/voting"
-  get "static_pages/accounts"
-  get "static_pages/about"
-  get "static_pages/contactus"
+  get "static_pages#about"
+  get "static_pages#contactus"
   
   resources :microposts
   resources :user_stories
