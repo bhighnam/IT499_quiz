@@ -192,8 +192,7 @@ body h3{
 aside {
   section {
     padding: 10px 0;
-    border-top: 1px solid $grayLighter;
-    &:first-child {
+    border-top: 1px solid #b0e0e6;
       border: 0;
       padding-top: 0;
     }
