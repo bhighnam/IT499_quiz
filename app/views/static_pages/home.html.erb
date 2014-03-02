@@ -14,16 +14,12 @@
           	<td><label>User Name: </label></td>
              	<td>
                   <input name="username" type="text" id="username" size="30" 
-             	    data-validation="length 			alphanumeric" data-validation-length="1-10" 
+             	    data-validation="length alphanumeric" data-validation-length="1-10" 
             	    data-validation-error-msg= "no special characters"/>
             	</td>
              	<!-- New User -->
-             	<td> <%= link_to "New User", :action => "new", :id => users %> </td>
+             	<td> <%= link_to "New User", :action => "new", :id => users_path %> </td>
          	</tr>
-        	<tr>
-             	<td> <%= link_to "New User", :action => "new", :id => users %> </td>
-        </tr>
-        
         <tr>
             	<td><label>Password: </label></td>
                 
