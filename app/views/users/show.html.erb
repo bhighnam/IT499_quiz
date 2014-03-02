@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div class="row">
   <aside class="span4">
     <section>
@@ -19,3 +20,25 @@
     </section>
   </aside>
 </div>
+=======
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @user.email %>
+</p>
+
+<p>
+  <strong>Password:</strong>
+  <%= @user.password %>
+</p>
+
+<% provide( :title, @user.name  ) %>
+
+<h1>
+      <%= @user.name %>
+ </h1>
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>
+>>>>>>> branch 'master' of https://github.com/crowdpublishtv/teamawesome
