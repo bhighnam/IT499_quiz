@@ -1,9 +1,10 @@
 Teamawesome::Application.routes.draw do
-  resources :user_stories
+  resources :users
+  root 'static_pages#home'    
+  match '/signup', to: 'users#new', via: 'get'    
 
   resources :stories
-
-  root 'static_pages#home'                                           
+                                  
   get "static_pages/new_user"
   get "static_pages/voting"
   get "static_pages/accounts"
@@ -11,9 +12,7 @@ Teamawesome::Application.routes.draw do
   get "static_pages/contactus"
   
   resources :microposts
-
-  resources :users
-  match '/signup', to: 'users#new', via 'get'
+  resources :user_stories
 
 
   # The priority is based upon order of creation: first created -> highest priority.
