@@ -4,13 +4,16 @@ Teamawesome::Application.routes.draw do
   match '/signup',  to: 'users#new',            via: 'get'   
 
   resources :stories
-                                  
-  get "static_pages#about"
-  get "static_pages#contactus"
-  
   resources :microposts
   resources :user_stories
+  resources :static_pages
 
+  get "static_pages/home"
+  get "static_pages/about"
+  get "static_pages/contactus"
+
+  match 'about', to: 'static_pages/about', via: 'get'
+  match 'contactus', to: 'static_pages/contactus', via: 'get'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
