@@ -1,0 +1,1 @@
+Did Listing 7.10 and 7.3 and put into the app. Figure out heroku issues. Next thing, get the home page to look like the .html version in public folder.
