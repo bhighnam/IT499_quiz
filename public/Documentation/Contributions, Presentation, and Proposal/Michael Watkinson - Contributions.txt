@@ -18,3 +18,5 @@ Added template to application.html.erb and and content to about and contactus .h
 JANUARY 25, 2014
 Completed listings 7.3, 7.5, 7.14, 7.15, 7.17
 Created text files for contributions for whole team and pushed to github
+Comepleted listings 7.18-7.25
+Helped fix multiple application errors
