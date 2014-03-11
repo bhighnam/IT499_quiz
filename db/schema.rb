@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140225202548) do
+ActiveRecord::Schema.define(version: 20140311202541) do
 
   create_table "microposts", force: true do |t|
     t.string   "STORY"
@@ -27,6 +27,14 @@ ActiveRecord::Schema.define(version: 20140225202548) do
     t.string   "sent10"
     t.string   "sent11"
     t.string   "sent12"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "sessions", force: true do |t|
+    t.string   "new"
+    t.string   "create"
+    t.string   "destroy"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

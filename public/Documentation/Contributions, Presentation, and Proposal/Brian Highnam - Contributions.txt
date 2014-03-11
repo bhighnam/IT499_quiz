@@ -8,4 +8,5 @@ Tuesday March 11th, 2014
 Created scaffolding for sessions
 Did listing 8.4
 Did listing 8.13
+Did listing 8.16
 
