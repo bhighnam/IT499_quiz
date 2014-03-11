@@ -1,6 +1,5 @@
 Teamawesome::Application.routes.draw do
-  resources :users
-  root 'static_pages#home'    
+  resources :users 
   match '/signup',  to: 'users#new', via: 'get'   
   
   resources :sessions, only: [:new, :create, :destroy]
