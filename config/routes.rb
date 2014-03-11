@@ -2,6 +2,12 @@ Teamawesome::Application.routes.draw do
   resources :users
   root 'static_pages#home'    
   match '/signup',  to: 'users#new', via: 'get'   
+  
+  resources :sessions, only: [:new, :create, :destroy]
+  root  'static_pages#home'
+  match '/signup',  to: 'users#new',            via: 'get'
+  match '/signin',  to: 'sessions#new',         via: 'get'
+  match '/signout', to: 'sessions#destroy',     via: 'delete'
 
   resources :stories
   resources :microposts
@@ -9,8 +15,6 @@ Teamawesome::Application.routes.draw do
   #resources :static_pages
 
   get "static_pages/home"
-  get "static_pages/about"
-  get "static_pages/contactus"
 
   match '/about', to: 'static_pages#about', via: 'get'
   match '/contactus', to: 'static_pages#contactus', via: 'get'
