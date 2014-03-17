@@ -21,7 +21,9 @@ Created text files for contributions for whole team and pushed to github
 Comepleted listings 7.18-7.25
 Helped fix multiple application errors
 
-Week of MARCH 6, 2014
+Week of MARCH 6, 2014 and MARCH 18, 2014
 Removed duplicate template problem
 Fixed route file
 Hartl Listings 8.2, 8.7, 8.13, 8.18, 8.22, 8.23, 8.24, 8.27, 8.29, 8.30
+updated user validation methods
+Listing 9.2, 9.3, 9.7, 9.14, 9.15, 9.17
