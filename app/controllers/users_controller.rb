@@ -34,7 +34,6 @@ class UsersController < ApplicationController
         render 'new'
       end
     end
-  end
 
   # PATCH/PUT /users/1
   # PATCH/PUT /users/1.json
@@ -70,4 +69,4 @@ class UsersController < ApplicationController
     def user_params
       params.require(:user).permit(:name, :email, :password, :password_confirmation)
     end
-end # end of class UserController 
+end # end of class UserControl 
