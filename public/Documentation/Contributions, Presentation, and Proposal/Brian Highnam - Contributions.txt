@@ -19,5 +19,7 @@ Fixed errors in app
 Did listing 9.8
 Did listing 9.10
 Did listing 9.12
+Did listing 9.18
+Did listing 9.19
 
 
