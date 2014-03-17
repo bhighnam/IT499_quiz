@@ -7,7 +7,7 @@ Changed CSS to match the page flow diagram
 Made the navigation section functional
 Moved the about us section to the about_us.html page
 
-JANUARY 18, 2014
+Week of JANUARY 18, 2014
 Created a Facebook, Twitter, Gmail, and Paypal account for SentenceZing
 Added Logos and links to these accounts on the Contact Us page
 Created validation for Users for email and password 
@@ -15,8 +15,13 @@ Created validation for Microposts for sentence length
 Rolled back git and helped restore files after the “catastrophe”
 Added template to application.html.erb and and content to about and contactus .html.erb pages 
 
-JANUARY 25, 2014
+Week of JANUARY 25, 2014
 Completed listings 7.3, 7.5, 7.14, 7.15, 7.17
 Created text files for contributions for whole team and pushed to github
 Comepleted listings 7.18-7.25
 Helped fix multiple application errors
+
+Week of MARCH 6, 2014
+Removed duplicate template problem
+Fixed route file
+Hartl Listings 8.2, 8.7, 8.13, 8.18, 8.22, 8.23, 8.24, 8.27, 8.29, 8.30
