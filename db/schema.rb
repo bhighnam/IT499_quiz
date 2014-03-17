@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140311202541) do
+ActiveRecord::Schema.define(version: 20140317172940) do
 
   create_table "microposts", force: true do |t|
     t.string   "STORY"
@@ -58,6 +58,7 @@ ActiveRecord::Schema.define(version: 20140311202541) do
     t.string   "password"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "password_digest"
   end
 
 end
