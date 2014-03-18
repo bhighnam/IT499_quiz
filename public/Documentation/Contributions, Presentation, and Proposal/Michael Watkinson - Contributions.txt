@@ -32,3 +32,4 @@ Week of MARCH 18, 2014
 Fixed page formatting: sign up,
 Fixed error preventing sign up for new users
 A lot of UI changes to css pages. Added a header and footer
+Added a favicon and logo
