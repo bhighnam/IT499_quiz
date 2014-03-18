@@ -58,7 +58,10 @@ ActiveRecord::Schema.define(version: 20140317172940) do
     t.string   "password"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "remember_token"
     t.string   "password_digest"
   end
+
+  add_index "users", ["remember_token"], name: "index_users_on_remember_token"
 
 end
