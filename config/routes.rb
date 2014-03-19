@@ -1,11 +1,20 @@
 Teamawesome::Application.routes.draw do
-  resources :users 
+  
+  # This is for users having additional profile pages
+  resources :users do
+    member do
+ #     get 'extraprofilepage'
+    end
+  end
+
+#  resources :users 
   resources :sessions, only: [:new, :create, :destroy]
   root  'static_pages#home'
   match '/signup',  to: 'users#new',            via: 'get'
   match '/signin',  to: 'sessions#new',         via: 'get'
   match '/signout', to: 'sessions#destroy',     via: 'delete'
   match '/usersearch', to: 'users#usersearch', via: 'get'
+
 
   resources :stories
   resources :microposts

@@ -12,6 +12,10 @@ class UsersController < ApplicationController
     @users = User.all
   end
 
+  def extraprofilepage
+    @user = User.find(params[:id])
+  end
+
   # GET /users/1
   # GET /users/1.json
   def show
