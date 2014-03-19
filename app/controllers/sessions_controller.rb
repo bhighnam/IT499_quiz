@@ -14,7 +14,7 @@ class SessionsController < ApplicationController
 
   # GET /sessions/new
   def new
-    @session = Session.new
+# this doesn't belong here    @session = Session.new
   end
 
   # GET /sessions/1/edit
