@@ -1,17 +1,26 @@
 
-      <p id="notice"><%= notice %></p>
+<p id="notice"><%= notice %></p>
 
-      <p>
-        <strong>Email:</strong>
-        <%= @user.email %>
-      </p>
+<p>
+  <strong>Name:</strong>
+  <%= @user.name %>
+</p>   
 
-      <p>
-        <strong>Password:</strong>
-        <%= @user.password %>
-      </p>
+<p>
+  <strong>Email:</strong>
+  <%= @user.email %>
+</p>  
+      
+<br/>   
       
 <%= link_to 'User Search', usersearch_path %> <p>
 <%= link_to 'List of all SentenceZing members', users_path %> 
 
-<br/>
+<div class="span8">
+  <% if @user.microposts.any? %>
+    <ol class="microposts">
+      <%= render @microposts %>
+    </ol>
+    <%= will_paginate @microposts %>
+  <% end %>
+</div>

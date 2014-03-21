@@ -9,7 +9,6 @@ Teamawesome::Application.routes.draw do
  # or this get "users/:id/anotherpage" => "users#anotherpage", as: 'anotherpage'
  
 
-#  resources :users 
   resources :sessions, only: [:new, :create, :destroy]
   root  'static_pages#home'
   match '/signup',  to: 'users#new',            via: 'get'
@@ -17,8 +16,8 @@ Teamawesome::Application.routes.draw do
   match '/signout', to: 'sessions#destroy'  ,     via: 'delete'
   match '/usersearch', to: 'users#usersearch', via: 'get'
 
+  resources :microposts, only: [:create, :destroy]
   resources :stories
-  resources :microposts
   resources :user_stories
   #resources :static_pages
 
