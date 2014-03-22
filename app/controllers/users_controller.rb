@@ -39,6 +39,7 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
       if @user.save
         sign_in @user
+        @user.update_attribute(:loggedin, 1)
         flash[:success] = "Welcome to SentenceZing!"
         redirect_to @user
       else
@@ -77,7 +78,7 @@ class UsersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def user_params
-      params.require(:user).permit(:name, :permalink, :email, :password, :password_confirmation)
+      params.require(:user).permit(:name, :permalink, :loggedin, :email, :password, :password_confirmation)
 
     end # end of method user_params
     

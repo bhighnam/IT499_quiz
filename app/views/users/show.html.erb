@@ -7,8 +7,11 @@
 </p>   
 
 <p>
-  <strong>Email:</strong>
-  <%= @user.email %>
+  <% if @user.loggedin == 1 %>
+    <strong>Online</strong>
+  <% else %>
+    <strong>Offline</strong>
+  <% end %>
 </p>  
       
 <br/>   

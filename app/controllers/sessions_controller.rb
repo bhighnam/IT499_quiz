@@ -11,6 +11,7 @@ class SessionsController < ApplicationController
     user = User.find_by(email: params[:session][:email].downcase)
     if user && user.authenticate(params[:session][:password])
       sign_in user
+      user.update_attribute(:loggedin, 1)
       redirect_back_or user
     else
       flash.now[:error] = 'Invalid email/password combination'
@@ -35,6 +36,7 @@ class SessionsController < ApplicationController
   # DELETE /sessions/1
   # DELETE /sessions/1.json
   def destroy
+    current_user.update_attribute(:loggedin, 0)
     sign_out
     redirect_to root_url
   end
