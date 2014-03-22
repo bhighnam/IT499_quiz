@@ -38,3 +38,5 @@ Revised schema and added name, password, and permalink fields
 Added header
 Added microposts to stories pages 
 Removed user_stories controller, model, pages, and helper
+Added aboutme field to user db table and added into the user show and edit pages
+Made formatting changes to user pages
