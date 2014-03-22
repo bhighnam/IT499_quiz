@@ -33,3 +33,8 @@ Fixed page formatting: sign up,
 Fixed error preventing sign up for new users
 A lot of UI changes to css pages. Added a header and footer
 Added a favicon and logo
+Hartl Chapter 10
+Revised schema and added name, password, and permalink fields
+Added header
+Added microposts to stories pages 
+Removed user_stories controller, model, pages, and helper
