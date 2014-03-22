@@ -1,4 +1,14 @@
-<h1>Editing story</h1>
+<h1>Your Story</h1>
+
+<center> <div>
+  <% if @user.microposts.any? %>
+    <ol class="microposts">
+      <%= render @microposts %>
+    </ol>
+    <%= will_paginate @microposts %>
+  <% end %>
+</div> </center>
+<br/>
 
 <%= render 'form' %>
 
