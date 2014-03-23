@@ -6,6 +6,9 @@ class MicropostsController < ApplicationController
 
   def create
     @micropost = current_user.microposts.build(micropost_params)
+    @micropost.update_attribute(:story_id, :id) 
+# I need to figure out how to pass the @story.id into here
+
     if @micropost.save
       flash[:success] = "Micropost created!"
       redirect_to root_url

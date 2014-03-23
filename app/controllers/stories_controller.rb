@@ -17,8 +17,6 @@ class StoriesController < ApplicationController
   def new
     @story = Story.new
     if signed_in?
-      @micropost  = current_user.microposts.build
-      @micropost.update_attribute(:story_id, :id)   
       @feed_items = current_user.feed.paginate(page: params[:page])
     end
   end
@@ -26,7 +24,8 @@ class StoriesController < ApplicationController
   # GET /stories/1/edit
   def edit
     @story = Story.find(params[:id])
-    @microposts = @story.microposts.paginate(page: params[:page])
+    @micropost  = current_user.microposts.build
+# Not convinced the line above is correct. I tried @story, but doesn't work
   end
 
   # POST /stories
