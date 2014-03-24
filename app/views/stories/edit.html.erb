@@ -3,14 +3,7 @@
 
 <center> <div>
   <% if @story.microposts.any? %>
-    <ol class="microposts">
-      <%= render @story.microposts %>
-    </ol>
-<%
-=begin %>
-    <%= will_paginate @story.microposts %>
-<%
-=end %>
+    <%= render 'shared/feed' %>
 
   <% end %>
 </div> </center>

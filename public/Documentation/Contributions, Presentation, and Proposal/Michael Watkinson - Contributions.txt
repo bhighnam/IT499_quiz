@@ -44,3 +44,4 @@ Added new story and voting page links to header for signed in users
 Changed order for displaying microposts from DESC to ASC
 Removed editing story title and category
 Displays title of Story and Category at the top of story edit page
+Formatted the microposts on story edit page in a table with the user and time since posted

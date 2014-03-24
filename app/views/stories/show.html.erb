@@ -1,14 +1,13 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @story.title %>
-</p>
+<h1><%= @story.title %></h1>
+<h2><%= @story.category %></h2>
 
-<p>
-  <strong>Category:</strong>
-  <%= @story.category %>
-</p>
+  <p>
+  <% if @story.microposts.any? %>
+      <%= render @story.microposts %>
+  <% end %>
+  </p>
+<br/>
 
-<%= link_to 'Edit', edit_story_path(@story) %> |
 <%= link_to 'Back', stories_path %>

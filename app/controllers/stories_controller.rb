@@ -26,6 +26,7 @@ class StoriesController < ApplicationController
     @story = Story.find(params[:id])
 #    @micropost = current_user.microposts.build if signed_in?
     @micropost  = @story.microposts.build
+    @feed_items = @story.microposts.paginate(page: params[:page])
 # line above may not be correct
   end
 
