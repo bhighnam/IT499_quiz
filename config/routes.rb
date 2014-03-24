@@ -20,7 +20,6 @@ Teamawesome::Application.routes.draw do
   resources :stories #do
 #    resources :microposts  #, only: [:create, :destroy]
 #  end
-  #resources :static_pages
   resources :microposts 
 
   get "static_pages/home"
