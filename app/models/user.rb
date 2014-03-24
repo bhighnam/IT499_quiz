@@ -1,5 +1,9 @@
 class User < ActiveRecord::Base
   has_many :microposts
+  has_many :stories
+
+#  has_and_belongs_to_many :stories
+
   before_save { self.email = email.downcase }
   before_create :create_remember_token
   

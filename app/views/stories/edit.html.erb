@@ -3,14 +3,34 @@
 <center> <div>
   <% if @story.microposts.any? %>
     <ol class="microposts">
-      <%= render @microposts %>
+      <%= render @story.microposts %>
     </ol>
-    <%= will_paginate @microposts %>
+<%
+=begin %>
+    <%= will_paginate @story.microposts %>
+<%
+=end %>
+
   <% end %>
 </div> </center>
 <br/>
 
 <%= render 'form' %>
+
+
+<% 
+=begin %>
+This is just some garbage I was trying when I was overcomplicating.
+	It's a nested attributes form. Leaving it in for a little while longer incase I want it later.
+<% f.fields_for :microposts do |builder| %>  
+<p>  
+    <%= builder.label :content, "Question" %><br />  
+    <%= builder.text_area :content, :rows => 3 %>  
+  </p>  
+<% end %>  
+  <p><%= f.submit "Submit" %></p>  
+<% 
+=end %>
 
 
 <section>

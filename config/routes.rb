@@ -8,18 +8,20 @@ Teamawesome::Application.routes.draw do
   end
  # or this get "users/:id/anotherpage" => "users#anotherpage", as: 'anotherpage'
  
-
   resources :sessions, only: [:new, :create, :destroy]
+ 
   root  'static_pages#home'
   match '/signup',  to: 'users#new',            via: 'get'
   match '/signin',  to: 'sessions#new',         via: 'get'
   match '/signout', to: 'sessions#destroy'  ,     via: 'delete'
   match '/usersearch', to: 'users#usersearch', via: 'get'
 
-  resources :microposts, only: [:create, :destroy]
-  resources :stories
-  resources :user_stories
+
+  resources :stories #do
+#    resources :microposts  #, only: [:create, :destroy]
+#  end
   #resources :static_pages
+  resources :microposts 
 
   get "static_pages/home"
   get "static_pages/about"

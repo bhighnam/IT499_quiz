@@ -24,19 +24,22 @@ class StoriesController < ApplicationController
   # GET /stories/1/edit
   def edit
     @story = Story.find(params[:id])
-    @micropost  = current_user.microposts.build
-# Not convinced the line above is correct. I tried @story, but doesn't work
+#    @micropost = current_user.microposts.build if signed_in?
+    @micropost  = @story.microposts.build
+# line above may not be correct
   end
 
   # POST /stories
   # POST /stories.json
   def create
-    @story = Story.new(story_params)
+#    @story = Story.new(story_params)
+    @story = current_user.stories.build(params[:story_params])
 
     respond_to do |format|
       if @story.save
         format.html { redirect_to @story, notice: 'Story was successfully created.' }
         format.json { render action: 'show', status: :created, location: @story }
+#        redirect_to ???
       else
         format.html { render action: 'new' }
         format.json { render json: @story.errors, status: :unprocessable_entity }
@@ -76,6 +79,6 @@ class StoriesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def story_params
-      params.require(:story).permit(:title, :category, :micropost)
+      params.require(:story).permit(:title, :category, :micropost, :user_id)
     end
 end
