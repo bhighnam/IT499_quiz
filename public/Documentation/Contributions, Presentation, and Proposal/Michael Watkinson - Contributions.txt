@@ -41,3 +41,6 @@ Removed user_stories controller, model, pages, and helper
 Added aboutme field to user db table and added into the user show and edit pages
 Made formatting changes to user pages
 Added new story and voting page links to header for signed in users
+Changed order for displaying microposts from DESC to ASC
+Removed editing story title and category
+Displays title of Story and Category at the top of story edit page
